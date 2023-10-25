@@ -18,3 +18,6 @@ Question: Сделай перевод с английского на русск�
 
 result = p(context )
 print(result)
+"""
+[{'generated_text': "\nUse the following pieces of context to answer only on Russian language. If the answer is not contained in the context, please don't share false information.\n\nProbiotic products are considered functional foods because they benefit human health. \nQuestion: Сделай перевод с английского на русский язык. \n\nПробиотики считаются функциональными продуктами, потому что они способствуют здоровью человека."}]
+"""
