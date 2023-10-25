@@ -2,7 +2,7 @@
 from transformers import pipeline,AutoTokenizer
 import torch
 
-checkpoint =  "Open-Orca/Mistral-7B-OpenOrca"
+checkpoint =  "OpenAssistant/llama2-13b-orca-8k-3319"
 
 model_kwargs = {"device_map": "auto", "load_in_8bit": False}
 q_tokenizer = AutoTokenizer.from_pretrained(checkpoint )
