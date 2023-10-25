@@ -1,4 +1,4 @@
-#Запускает работу с контекстом
+#Запускает работу с контекстом в float16
 from transformers import pipeline,AutoTokenizer
 import torch
 
