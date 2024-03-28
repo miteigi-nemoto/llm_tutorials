@@ -1,3 +1,4 @@
+#source code for article https://vc.ru/ml/1098324-sravnenie-summarizacii-v-mixtral-8x7b-instruct-pri-fp16-8-bit-4-bit-bonus-primery-iz-cloude-3
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
