@@ -6,7 +6,7 @@ torch.manual_seed(0)
 np.random.seed(0)
 MODEL_NAME = "mistralai/Mixtral-8x7B-Instruct-v0.1"
 #MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
-cache_dir = '/miteigi_ext/hugging_cache/'
+#cache_dir = '/miteigi_ext/hugging_cache/'
 
 
 bnb_config4 = BitsAndBytesConfig(  
@@ -37,7 +37,7 @@ model = AutoModelForCausalLM.from_pretrained(
          
         torch_dtype=torch.bfloat16,
         #trust_remote_code=True,
-        cache_dir=cache_dir
+        #cache_dir=cache_dir
         )
 
 
