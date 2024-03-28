@@ -13,7 +13,7 @@ bnb_config4 = BitsAndBytesConfig(
     load_in_4bit= True,
     bnb_4bit_quant_type= "nf4",
     bnb_4bit_compute_dtype= torch.bfloat16,
-    bnb_4bit_use_double_quant= False,
+    bnb_4bit_use_double_quant= True,
     #llm_int8_enable_fp32_cpu_offload= True
 )
 
@@ -35,7 +35,7 @@ model = AutoModelForCausalLM.from_pretrained(
         quantization_config=bnb_config4,
         device_map="auto",
          
-        torch_dtype=torch.bfloat16,
+        torch_dtype=torch.float16,
         #trust_remote_code=True,
         #cache_dir=cache_dir
         )
